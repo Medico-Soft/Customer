@@ -24,3 +24,4 @@ C:\Users\azermeno\Desktop\respaldos\CustomerCareOriginal\CustomerCare\bin\System
 C:\Users\azermeno\Desktop\respaldos\CustomerCareOriginal\CustomerCare\bin\Telerik.Web.UI.xml
 C:\Users\azermeno\Desktop\respaldos\CustomerCareOriginal\CustomerCare\obj\Debug\CustomerCare.dll
 C:\Users\azermeno\Desktop\respaldos\CustomerCareOriginal\CustomerCare\obj\Debug\CustomerCare.pdb
+C:\Users\azermeno\Desktop\respaldos\CustomerCareOriginal\CustomerCare\bin\Microsoft.Web.Infrastructure.dll

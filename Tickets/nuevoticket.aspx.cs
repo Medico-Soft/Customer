@@ -33,7 +33,7 @@ public partial class NuevoTicket : CustomerCareResource
             rtbAsunto.Skin = ConfigurationManager.AppSettings["Skin"];
             rtbTipificacion.Skin = ConfigurationManager.AppSettings["Skin"];
             rcbResponsable.Skin = ConfigurationManager.AppSettings["Skin"];
-            rcbValidador.Skin = ConfigurationManager.AppSettings["Skin"];
+           // rcbValidador.Skin = ConfigurationManager.AppSettings["Skin"];
             rcbSolicitante.Skin = ConfigurationManager.AppSettings["Skin"];
             //RadAjaxLoadingPanel1.Skin = ConfigurationManager.AppSettings["Skin"];
             RadSplitter1.Skin = ConfigurationManager.AppSettings["Skin"];
@@ -201,10 +201,10 @@ public partial class NuevoTicket : CustomerCareResource
                 ValueResp.Visible = false;
                 ValueResp.Style.Add("display", "none");
                 rcbResponsable.Visible = true;
-                rcbValidador.DataSource = resp;
+               /* rcbValidador.DataSource = resp;
                 rcbValidador.DataTextField = "nombre";
                 rcbValidador.DataValueField = "codigo";
-                rcbValidador.DataBind();
+                rcbValidador.DataBind();*/
             }
             //if (reader.Read())
             //{
@@ -382,7 +382,7 @@ public partial class NuevoTicket : CustomerCareResource
         {
             pri = Convert.ToInt32(rcbPrioridad.SelectedValue.Trim());
         }
-        if (chkVal.Checked)
+       /* if (chkVal.Checked)
         {
             try
             {
@@ -393,7 +393,7 @@ public partial class NuevoTicket : CustomerCareResource
             {
                 val = "no";
             }
-        }
+        }*/
 
         if (!estaVacio)
         {

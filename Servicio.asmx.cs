@@ -1351,7 +1351,7 @@ namespace CustomerCare
                     ",i.TipoSolicitante as rTipoSolicitante" +
                     ",i.Solicitante as rSolCodigo " +
                     ", ISNULL(CASE i.TipoSolicitante  " +
-                "		WHEN 1 THEN un.Nombre  " +
+                        "WHEN 1 THEN un.Nombre  " +
                         "WHEN 2 THEN gs.Nombre  " +
                         "WHEN 3 THEN zo.Nombre  " +
                         "WHEN 4 THEN u3.Nombre  " +

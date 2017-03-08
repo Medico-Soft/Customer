@@ -25,7 +25,7 @@ namespace CustomerCare
 
         public static string toSQL(this string texto)
         {
-            return texto.Replace("'", "''");
+            return texto == null ? "NULL" : texto.Replace("'", "''");
         }
     }
 

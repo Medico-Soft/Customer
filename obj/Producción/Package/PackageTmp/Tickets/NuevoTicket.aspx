@@ -20,9 +20,18 @@
                 document.getElementById("LInicio").style.display = "none";
                 document.getElementById("IniDate").style.display = "none";
                 document.getElementById("IniTime").style.display = "none";
-                //document.getElementById("rdtpInicio_ClientState").style.display = "none";
-                //document.getElementById("rdtpInicio").style.display = "none";
-                //document.getElementById("rdtpInicio_wrapper").style.display = "none";
+            }
+            if (document.getElementById("chkVal").checked == true) {
+            document.getElementById("lblValidador").style.display = "block";
+            document.getElementById("rcbValidador").style.display = "block";
+            document.getElementById("Validador").style.display = "block";
+            document.getElementById("ValueVali").style.display = "block";
+            }
+            else {
+                document.getElementById("lblValidador").style.display = "none";
+                document.getElementById("rcbValidador").style.display = "none";
+                document.getElementById("Validador").style.display = "none";
+                document.getElementById("ValueVali").style.display = "none";
             }
         }
 
@@ -203,7 +212,10 @@ font-size: 12px;">
                             <asp:CheckBox ID="chkRes" runat="server" Enabled="true" OnClick="inicialResuelta()" TabIndex="4"/>&nbsp;
                             <asp:Label ID="lblInactiva" runat="server" CssClass="label" 
                                 Text="Inactiva: "></asp:Label>
-                            <asp:CheckBox ID="chkIna" runat="server" OnClick="inicial();" TabIndex="7"/>
+                            <asp:CheckBox ID="chkIna" runat="server" OnClick="inicial();" TabIndex="7"/>&nbsp;
+                            <asp:Label ID="lblValidada" runat="server" CssClass="label" 
+                                Text="Validada: "></asp:Label>
+                            <asp:CheckBox ID="chkVal" runat="server" OnClick="inicial();" TabIndex="8"/>
                         </div>
                         <div class="yolopuse">
                         <asp:Label ID="lblPrioridad" runat="server" CssClass="label" 
@@ -249,6 +261,18 @@ font-size: 12px;">
                                 </telerik:RadDateTimePicker>--%>
                         <%--</div>--%>
                         </div>
+                    <div class="yolopuse">
+                        <asp:Label ID="lblValidador" runat="server" CssClass="invisible" 
+                            Text="Validador: "></asp:Label>
+                        <br />
+                        <telerik:RadComboBox ID="rcbValidador" Runat="server" CssClass="elemento invisible dato" 
+                            Filter="Contains" EmptyMessage="Validador..." Width="300px" TabIndex="2" MarkFirstMatch="True" DataTextField="Nombre" DataValueField="Codigo">
+                        </telerik:RadComboBox>
+                        <asp:Label ID="Validador" runat="server" Text="Label" CssClass="invisible"></asp:Label>
+                        <telerik:RadTextBox ID="ValueVali" CssClass="elemento invisible dato" Runat="server" Text="">
+                        </telerik:RadTextBox>
+                        <br />
+                    </div>
 
                 </telerik:RadPane>
                 <telerik:RadSplitBar ID="RadSplitBar1" Runat="server">
