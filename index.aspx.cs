@@ -23,7 +23,7 @@ namespace CustomerCare
 
         private void esCambioContrasena()
         {
-            Label1.Text = "Contraseña";
+                    Label1.Text = "Contraseña";
                     edUsuario.ToolTip = "Escribe tu contraseña actual";
                     edUsuario.TextMode = TextBoxMode.Password;
                     edPassword.ToolTip = "Escribe la nueva contraseña";
@@ -243,8 +243,9 @@ namespace CustomerCare
             }
 			
             int pc;
-            Qry.CommandText = "SELECT Usuarios.Nombre, Usuarios.TipoUsuario, Usuarios.DCC, Usuarios.Codigo, Usuarios.Pruebas, Usuarios.permisos, Perfiles.Permisos As perfperm  FROM Usuarios left JOIN Perfiles ON Usuarios.Perfil=Perfiles.Codigo WHERE rtrim(Login)=rtrim('" + edUsuario.Text + "') and cast(Clave as" +
-                " varchar)='" +Encrip(edPassword.Text) +"'";
+            Qry.CommandText = "SELECT Usuarios.Nombre, Usuarios.TipoUsuario, Usuarios.DCC, Usuarios.Codigo, Usuarios.Pruebas,"+
+                " Usuarios.permisos, Perfiles.Permisos As perfperm  FROM Usuarios left JOIN Perfiles ON Usuarios.Perfil=Perfiles.Codigo "+
+                "WHERE Usuarios.Activo=1 and rtrim(Login)=rtrim('" + edUsuario.Text + "') and cast(Clave as varchar)='" +Encrip(edPassword.Text) +"'";
             Qry.Connection = bdpCon;
             bdpCon.Open();
             dbRead = Qry.ExecuteReader();

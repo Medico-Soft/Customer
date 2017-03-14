@@ -929,6 +929,7 @@ function color(n) {
 function mesnum(mes) {
     switch (mes) {
         case "ene":
+        case "jan":
             return "00";
             break;
         case "feb":
@@ -938,6 +939,7 @@ function mesnum(mes) {
             return "02";
             break;
         case "abr":
+        case "apr":
             return "03";
             break;
         case "may":
@@ -950,6 +952,7 @@ function mesnum(mes) {
             return "06";
             break;
         case "ago":
+        case "aug":
             return "07";
             break;
         case "sep":
@@ -962,10 +965,12 @@ function mesnum(mes) {
             return "10";
             break;
         case "dic":
+        case "dec":
             return "11";
             break;
     }
 }
+
 function llegoactualiza(res, args) {
     Principal.semaforoVerde();
     if (res != "-1" && Datos) {

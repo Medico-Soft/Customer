@@ -120,7 +120,7 @@
                         <input id="Aceptar" type="button" value="Aceptar" class="btn_mediano" onclick="oculta();" />
                     </div>
                 </div>
-                <div id="list" class="cont" style="width:20%;min-width:220px">
+                <div id="list" class="cont" style="width:240px;min-width:220px">
                     <div class="botones">
                         <asp:ImageButton ID="Nuevo" runat="server" ImageUrl="~/Administracion/Estilos/Imagenes/nuevo-usuario-icono-8071-32.png" ToolTip="Nueva Unidad" OnClientClick="tamfram();" ClientIDMode="Static" OnClick="Nuevo_Click" />
                         <asp:ImageButton ID="Modificar" runat="server" ImageUrl="~/Administracion/Estilos/Imagenes/editar-un-marcador-de-nombre-icono-8476-32.png" ToolTip="Modificar Datos de la Unidad" OnClick="Modificar_Click" ClientIDMode="Static" />
@@ -141,7 +141,7 @@
                         <div class="campo">
                         <table>
                             <tr>
-                                <td><asp:Label ID="tCodigo" Text="Código" runat="server" />
+                                <td><asp:Label ID="tCodigo" Text="Código de unidad" runat="server" />
                                 </td>
                             </tr>
                             <tr>
@@ -154,7 +154,7 @@
                         <div class="campo">
                             <table>
                                 <tr>
-                                    <td>Nombre
+                                    <td>Nombre de unidad
                                     </td>
                                 </tr>
                                 <tr>
@@ -183,7 +183,7 @@
                         <div class="campo">
                             <table>
                                 <tr>
-                                    <td>Producto
+                                    <td>Producto o servicio instalado
                                     </td>
                                 </tr>
                                 <tr>
@@ -196,7 +196,7 @@
                         <div class="campo">
                             <table>
                                 <tr>
-                                    <td>Cliente
+                                    <td>Cliente al que pertenece
                                     </td>
                                 </tr>
                                 <tr>
@@ -219,6 +219,110 @@
                                 </tr>
                             </table>
                         </div>
+                    <%--    <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Zona
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="Zona" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Teléfono unidad
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="TelefonoUnidad" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Fecha de Registro
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="FechaRegistro" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Fecha última actualización
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="FechaActualizacion" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Licitación
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="Licitacion" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Técnico que atiende
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="TecnicoAtiende" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Institución
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="Instutucion" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="campo">
+                            <table>
+                                <tr>
+                                    <td>Contrato
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:TextBox ID="Contrato" runat="server"></asp:TextBox>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> --%>
                     </div>
                     <div id="denc" runat="server" class="division">
                         <div class="campo_check">

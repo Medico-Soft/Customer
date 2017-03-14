@@ -23,7 +23,7 @@ namespace CustomerCare
 {
     
     [WebService(Description = "Servicio web para aplicaciones de CustomerCare. Todos los metodos web en caso de error devuelven el texto \"Error \" seguido del numero de error. En caso de exito devuelven texto \"OK\"", Namespace = "http://customercare.com.mx/")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [WebServiceBinding(ConformsTo = WsiProfiles.None)]
     [ScriptService]
     public class Servicio : System.Web.Services.WebService
     {
@@ -1107,7 +1107,7 @@ namespace CustomerCare
 
         }
 
-        [WebMethod(Description = "Nuevo Ticket")]
+        [WebMethod(Description = "Nuevo Ticket", MessageName = "NuevoTicket")]
         public string NuevoTicket(string asu, string dasu, int usu, int res, string sol, int tip, string rin, int conc, string solu, DateTime lim, string ina, DateTime ini, int pri)
         {
             string result;
@@ -1171,7 +1171,7 @@ namespace CustomerCare
             return result;
         }
 
-        [WebMethod(Description = "Nuevo Ticket")]
+        [WebMethod(Description = "Nuevo Ticket Dos", MessageName = "NuevoTicketDos")]
         public string NuevoTicket(string asu, string dasu, int usu, int res, string sol, int tip, string rin, int conc, string solu, DateTime lim, string ina, DateTime ini, int pri, string val, int vdr)
         {
             string result;

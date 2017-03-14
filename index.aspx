@@ -126,7 +126,7 @@
                     </div>
                     <div style="width: 100%; height: auto;">
                         <div style="text-align: left; vertical-align: bottom;">
-                            <asp:Button ID="btnLogin" runat="server" Text="Continuar" Width="100%" OnClick="btnLogin_Click"></asp:Button>
+                            <asp:Button ID="btnLogin"  runat="server" Text="Continuar" Width="100%" OnClick="btnLogin_Click"></asp:Button>
                         </div>
                     </div>
                     <div style="width: 99%; height: auto; vertical-align: top; text-align: center;">

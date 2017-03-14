@@ -219,7 +219,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="campo">
+                    <%--    <div class="campo">
                             <table>
                                 <tr>
                                     <td>Zona
@@ -322,7 +322,7 @@
                                     </td>
                                 </tr>
                             </table>
-                        </div>
+                        </div> --%>
                     </div>
                     <div id="denc" runat="server" class="division">
                         <div class="campo_check">
