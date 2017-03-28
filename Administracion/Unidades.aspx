@@ -345,7 +345,7 @@
                         <div class="campo">
                             <table>
                                 <tr>
-                                    <td><asp:Label ID="LDomicilio" runat="server" Text="Domicilio"></asp:Label>
+                                    <td><asp:Label ID="LDomicilio" runat="server" Text="Proyecto/Licitación"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>
@@ -384,7 +384,7 @@
                         <div class="campo">
                             <table>
                                 <tr>
-                                    <td><asp:Label ID="LContacto" runat="server" Text="Contacto"></asp:Label>
+                                    <td><asp:Label ID="LContacto" runat="server" Text="Ejecutivo de cuenta"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>

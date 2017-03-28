@@ -48,6 +48,7 @@ function evebind() {
 }
 
 function tabSelected(s, e) {
+    alert("tabSelected");
     switch (e.get_tab().get_index()) {
         case 1:
             if (vioeve == 0)
@@ -148,6 +149,8 @@ function rechazar() {
 }
 
 function escalar() {
+    alert(Principal.serverVars.ticket);
+   
     var win = Principal.radopen("Acciones/Accion.aspx?acc=esc&cod=" + frame.tics + "&sen=Tickets", "Escalar " + Principal.serverVars.ticket + " no. " + frame.tickets);
     win.setSize(520, 300);
 }

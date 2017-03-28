@@ -19,8 +19,10 @@ namespace CustomerCare
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            Header.Title = (Request.QueryString["acc"] == "esc" ? "Escalar" : Request.QueryString["acc"] == "rec" ? "Rechazar" : Request.QueryString["acc"] == "cer" ? "Cerrar" : Request.QueryString["acc"] == "pri" ? "Priorizar" : "Validar") + " " + Request.QueryString["cod"];
-            rcbResponsable.Skin = System.Configuration.ConfigurationManager.AppSettings["Skin"];
+            Header.Title = (Request.QueryString["acc"] == "esc" ? "Escalar" : Request.QueryString["acc"] == "rec" ? 
+                "Rechazar" : Request.QueryString["acc"] == "cer" ? "Cerrar" : Request.QueryString["acc"] == "pri" ? 
+                "Priorizar" : "Validar") + " " + Request.QueryString["cod"];
+                 rcbResponsable.Skin = System.Configuration.ConfigurationManager.AppSettings["Skin"];
             switch (Request.QueryString["acc"])
             {
                 case "esc":
